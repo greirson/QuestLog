@@ -10,14 +10,12 @@ const isAuthenticated = (req, res, next) => {
   res.status(401).json({ message: 'Unauthorized' });
 };
 
-router.get('/google', 
-  passport.authenticate('google', { 
-    scope: ['profile', 'email'] 
-  })
+router.get('/oidc', 
+  passport.authenticate('openidconnect')
 );
 
-router.get('/google/callback', 
-  passport.authenticate('google', { 
+router.get('/oidc/callback', 
+  passport.authenticate('openidconnect', { 
     failureRedirect: '/login' 
   }),
   (req, res) => {

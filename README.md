@@ -27,7 +27,7 @@ _Tasks will be imported with default XP settings_
 
 ## 🔒 Security
 - **Authentication**: 
-  - Secure sign-in via Google OAuth 2.0
+  - Secure sign-in via OpenID Connect
   - Session-based authentication with Passport.js
   - Secure cookie management with express-session
 
@@ -58,7 +58,7 @@ Built with:
 - [MongoDB](https://www.mongodb.com/) - Database
 - [Vercel](https://vercel.com/) - Hosting platform
 - [Tailwind CSS](https://tailwindcss.com/) - Styling
-- [Google OAuth 2.0](https://developers.google.com/identity/protocols/oauth2) - Authentication
+- [OpenID Connect](https://openid.net/connect/) - Authentication
 - [Docker](https://www.docker.com/) - Container Orchestration
 
 ## 🏗️ Architecture
